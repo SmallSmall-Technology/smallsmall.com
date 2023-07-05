@@ -108,12 +108,12 @@
 								<?php if(@$userID && @$user_type == 'tenant' ){ ?>
 
 									<!--- Tenant button ---->
-									<a href="https://rent.smallsmall.com/user/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
+									<a href="https://dev-rent.smallsmall.com/user/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
 							
 								<?php }else if(@$userID && @$user_type == 'landlord' ){ ?>
 
 									<!--- Landlord button ---->
-									<a href="https://rent.smallsmall.com/landlord/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
+									<a href="https://dev-rent.smallsmall.com/landlord/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
 							
                 				<?php }else{ ?>
 

@@ -248,7 +248,7 @@ class Smallsmall extends CI_Controller {
 
 			if($registration){				
 
-				$data['confirmationLink'] = 'https://rent.smallsmall.com/confirm/'.$confirmationCode;
+				$data['confirmationLink'] = 'https://dev-rent.smallsmall.com/confirm/'.$confirmationCode;
 
 				$data['name'] = $fname;	
 				
