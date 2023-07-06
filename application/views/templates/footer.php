@@ -13,9 +13,9 @@
                 <div class="col-sm product-footer">
                 <h3>Products</h3>
                 <ul>
-                    <a href="https://rent.smallsmall.com" target="_blank"><li>Rent</li></a>
-                    <a href="https://stay.smallsmall.com"><li>Stay Nightly</li></a>
-                    <a href="https://buy.smallsmall.com" target="_blank"><li>Buy</li></a>
+                    <a href="https://dev-rent.smallsmall.com" target="_blank"><li>Rent</li></a>
+                    <a href="https://dev-stay.smallsmall.com"><li>Stay Nightly</li></a>
+                    <a href="https://dev-buy.smallsmall.com" target="_blank"><li>Buy</li></a>
                 </ul>
                 </div>
                 <div class="col-sm company-footer">
