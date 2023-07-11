@@ -1,4 +1,4 @@
-var baseUrl = "https://dev.smallsmall.com/";
+var baseUrl = "https://smallsmall.com/";
 
 function isEmail(email) {
 

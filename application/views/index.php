@@ -350,12 +350,12 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="team-member wow pixFadeRight" data-wow-delay="0.5s">
                             <div class="member-avater">
-                                <img src="https://dev-rent.smallsmall.com/uploads/news/<?php //echo $values['articleSlug']."/".$values['featuredImage']; ?>" alt="post-image">
+                                <img src="https://rent.smallsmall.com/uploads/news/<?php //echo $values['articleSlug']."/".$values['featuredImage']; ?>" alt="post-image">
                             </div>
 
                             <div class="team-info">
                                 <h3 class="name"><?php //echo $values['articleTitle']; ?></h3>
-                                <h3 class="job"><a target="_blank" href="https://dev-rent.smallsmall.com/article/<?php //echo $values['articleSlug']; ?>">Read more</a></h3>
+                                <h3 class="job"><a target="_blank" href="https://rent.smallsmall.com/article/<?php //echo $values['articleSlug']; ?>">Read more</a></h3>
                                 <h3 class="job"><?php //echo date('jS M Y', strtotime($values['datePosted'])); ?></h3>
                             </div>
                         </div>
