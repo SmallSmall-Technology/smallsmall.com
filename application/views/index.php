@@ -79,7 +79,7 @@
                             <div class="large-txt">A smart way to <br />live & pay <br />rent flexibly.</div>
                             <div class="head-txt">RentSmallSmall</div>
                             <!--<div class="small-txt">Pay monthly in any of our units, your choice.</div>-->
-                            <div class="explore-txt white-color"><a target="_blank" href="https://dev-rent.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="explore-txt white-color"><a target="_blank" href="https://rent.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
                         </div>
                     </div>
                     <div class="get-started-block">
@@ -89,7 +89,7 @@
                         <div class="block-item-full">
                             <div class="large-enf-blk-txt">Affordable nightly stay</div>
                             <div class="head-blk-txt">StaySmallSmall</div>                            
-                            <div class="explore-txt blk-color"><a target="_blank" href="https://dev-stay.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="explore-txt blk-color"><a target="_blank" href="https://stay.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
                         </div>                       
                     </div>
                     <div class="get-started-block">
@@ -99,7 +99,7 @@
                             <div class="large-enf-txt">Buy real estate & start earning guaranteed rent</div>
                             <div class="head-txt">BuySmallSmall</div>
 
-                            <div class="explore-txt white-color"><a target="_blank" href="https://dev-buy.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="explore-txt white-color"><a target="_blank" href="https://buy.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
                             
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                             <div class="large-txt">A smart way to <br />live & pay <br />rent flexibly.</div>
                             <div class="head-txt">RentSmallSmall</div>
                             <!--<div class="small-txt">Pay monthly in any of our units, your choice.</div>-->
-                            <div class="explore-txt white-color"><a target="_blank" href="https://dev-rent.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="explore-txt white-color"><a target="_blank" href="https://rent.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
                         </div>
                     </div>
                     <div class="get-started-block">
@@ -144,7 +144,7 @@
                         <div class="block-item-full">
                             <div class="large-enf-blk-txt">Affordable nightly stay</div>
                             <div class="head-blk-txt">StaySmallSmall</div>                            
-                            <div class="explore-txt blk-color"><a target="_blank" href="https://dev-stay.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="explore-txt blk-color"><a target="_blank" href="https://stay.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
                         </div>                       
                     </div>
                     <div class="get-started-block">
@@ -154,7 +154,7 @@
                             <div class="large-enf-txt">Buy real estate & start earning guaranteed rent</div>
                             <div class="head-txt">BuySmallSmall</div>
 
-                            <div class="explore-txt white-color"><a target="_blank" href="https://dev-buy.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="explore-txt white-color"><a target="_blank" href="https://buy.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
                             
                         </div>
                     </div>
@@ -174,9 +174,9 @@
             <?php if(!empty($rss_properties) && isset($rss_properties)){ ?>
                 <?php foreach($rss_properties as $rss_property => $rss_value){ ?>
                     <div class="property-item">
-                        <a target="_blank" href="https://dev-rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>">
+                        <a target="_blank" href="https://rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>">
                             <div class="prop-img">
-                                <img src="https://dev-rent.smallsmall.com/uploads/properties/<?php echo $rss_value['imageFolder']."/".$rss_value['featuredImg'] ?>" alt="property image" />
+                                <img src="https://rent.smallsmall.com/uploads/properties/<?php echo $rss_value['imageFolder']."/".$rss_value['featuredImg'] ?>" alt="property image" />
                                 <?php //if($rss_value['available_date'] < date('Y-m-d')){ ?>
                                     <div class="availability-bar">Available - <span class="available">now</span></div>
                                 <?php //}else{ ?>
@@ -192,18 +192,18 @@
                             </div>
                             <div class="detail-container">
                                 <div class="detail-item">
-                                    <a target="_blank" href="https://dev-rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>">
+                                    <a target="_blank" href="https://rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>">
                                         <span class="apt-title"><?php echo $rss_value['propertyTitle']; ?></span>
                                         <span class="apt-location"><?php echo $rss_value['city']; ?></span>
                                     </a>
                                 </div>
                                 <div class="detail-item">
                                     <div class="share-container" id="share-container-<?php echo $rss_value['propertyID']; ?>">
-                                        <span class="share-items"><a class="js-share-twitter-link" href="https://twitter.com/intent/tweet?url=https://dev-rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>"><i class="fa fa-twitter"></i></a></span>
-                                        <span class="share-items"><a href="javascript:fbShare('https://dev-rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>', '<?php echo @$rss_value['propertyTitle']; ?>', 'Pay rent monthly with us at Rent Small Small', 'https://dev-rent.smallsmall.com/uploads/properties/<?php echo $rss_value['imageFolder'].'/'.$rss_value['featuredImg']; ?>', 520, 350)"><i class="fa fa-facebook"></i></a></span>
-                                        <span class="share-items"><a class="whatsapp-link" href="whatsapp://send?text=https://dev-rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
+                                        <span class="share-items"><a class="js-share-twitter-link" href="https://twitter.com/intent/tweet?url=https://rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>"><i class="fa fa-twitter"></i></a></span>
+                                        <span class="share-items"><a href="javascript:fbShare('https://rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>', '<?php echo @$rss_value['propertyTitle']; ?>', 'Pay rent monthly with us at Rent Small Small', 'https://rent.smallsmall.com/uploads/properties/<?php echo $rss_value['imageFolder'].'/'.$rss_value['featuredImg']; ?>', 520, 350)"><i class="fa fa-facebook"></i></a></span>
+                                        <span class="share-items"><a class="whatsapp-link" href="whatsapp://send?text=https://rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
                                     </div>
-                                    <div class="cca-btn"><a target="_blank" href="https://dev-rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>">Rent</a></div><div class="share-btn" id="<?php echo $rss_value['propertyID']; ?>"><i class="fa fa-paper-plane"></i></div>
+                                    <div class="cca-btn"><a target="_blank" href="https://rent.smallsmall.com/property/<?php echo $rss_value['propertyID']; ?>">Rent</a></div><div class="share-btn" id="<?php echo $rss_value['propertyID']; ?>"><i class="fa fa-paper-plane"></i></div>
                                 </div>
                             </div>  
                         </div>
@@ -225,9 +225,9 @@
             <?php if(!empty($sss_properties) && isset($sss_properties)){ ?>
                 <?php foreach($sss_properties as $sss_property => $sss_value){ ?>
                     <div class="property-item">
-                        <a target="_blank" href="https://dev-stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>">
+                        <a target="_blank" href="https://stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>">
                             <div class="prop-img">
-                                <img src="https://dev-stay.smallsmall.com/uploads/apartments/<?php echo $sss_value['folder']."/".$sss_value['featuredImg'] ?>" alt="property image" />
+                                <img src="https://stay.smallsmall.com/uploads/apartments/<?php echo $sss_value['folder']."/".$sss_value['featuredImg'] ?>" alt="property image" />
                                 <?php //if($rss_value['available_date'] < date('Y-m-d')){ ?>
                                     <div class="availability-bar">Available - <span class="available">now</span></div>
                                 <?php //}else{ ?>
@@ -245,18 +245,18 @@
                             </div>
                             <div class="detail-container">
                                 <div class="detail-item">
-                                    <a target="_blank" href="https://dev-stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>">
+                                    <a target="_blank" href="https://stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>">
                                         <span class="apt-title"><?php echo $sss_value['apartmentName']; ?></span>
                                         <span class="apt-location"><?php echo $sss_value['city']; ?></span>
                                     </a>
                                 </div>
                                 <div class="detail-item">
                                     <div class="share-container" id="share-container-<?php echo $sss_value['apartmentID']; ?>">
-                                        <span class="share-items"><a class="js-share-twitter-link" href="https://twitter.com/intent/tweet?url=https://dev-stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>"><i class="fa fa-twitter"></i></a></span>
-                                        <span class="share-items"><a href="javascript:fbShare('https://dev-stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>', '<?php echo @$sss_value['apartmentName']; ?>', 'Stay Small Small Apartments', 'https://dev-stay.smallsmall.com/uploads/apartments/<?php echo $sss_value['folder'].'/'.$sss_value['featuredImg']; ?>', 520, 350)"><i class="fa fa-facebook"></i></a></span>
-                                        <span class="share-items"><a class="whatsapp-link" href="whatsapp://send?text=https://dev-stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
+                                        <span class="share-items"><a class="js-share-twitter-link" href="https://twitter.com/intent/tweet?url=https://stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>"><i class="fa fa-twitter"></i></a></span>
+                                        <span class="share-items"><a href="javascript:fbShare('https://stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>', '<?php echo @$sss_value['apartmentName']; ?>', 'Stay Small Small Apartments', 'https://stay.smallsmall.com/uploads/apartments/<?php echo $sss_value['folder'].'/'.$sss_value['featuredImg']; ?>', 520, 350)"><i class="fa fa-facebook"></i></a></span>
+                                        <span class="share-items"><a class="whatsapp-link" href="whatsapp://send?text=https://stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
                                     </div>
-                                    <div class="cca-btn"><a target="_blank" href="https://dev-stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>">Book</a></div><div class="share-btn" id="<?php echo $sss_value['apartmentID']; ?>"><i class="fa fa-paper-plane"></i></div>
+                                    <div class="cca-btn"><a target="_blank" href="https://stay.smallsmall.com/apartment/<?php echo $sss_value['apartmentID']; ?>">Book</a></div><div class="share-btn" id="<?php echo $sss_value['apartmentID']; ?>"><i class="fa fa-paper-plane"></i></div>
                                 </div>
                             </div>  
                         </div>
@@ -277,9 +277,9 @@
             <?php if(!empty($bss_properties) && isset($bss_properties)){ ?>
                 <?php foreach($bss_properties as $bss_property => $bss_value){ ?>
                     <div class="property-item">
-                        <a target="_blank" href="https://dev-buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>">
+                        <a target="_blank" href="https://buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>">
                             <div class="prop-img">
-                                <img src="https://dev-buy.smallsmall.com/uploads/buytolet/<?php echo $bss_value['image_folder']."/".$bss_value['featured_image'] ?>" alt="property image" />
+                                <img src="https://buy.smallsmall.com/uploads/buytolet/<?php echo $bss_value['image_folder']."/".$bss_value['featured_image'] ?>" alt="property image" />
                                 <div class="availability-bar"><span class="available"><?php echo @$bss_value['type'] ?></span></div>
                                 
                             </div>
@@ -308,18 +308,18 @@
                             </div>
                             <div class="detail-container">
                                 <div class="detail-item">
-                                    <a target="_blank" href="https://dev-buy.smallsmall.com">
+                                    <a target="_blank" href="https://buy.smallsmall.com">
                                         <span class="apt-title"><?php echo $bss_value['property_name']; ?></span>
                                         <span class="apt-location"><?php echo $bss_value['city']; ?></span>
                                     </a>
                                 </div>
                                 <div class="detail-item">
                                     <div class="share-container" id="share-container-<?php echo $bss_value['propertyID']; ?>">
-                                        <span class="share-items"><a class="js-share-twitter-link" href="https://twitter.com/intent/tweet?url=https://dev-buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>"><i class="fa fa-twitter"></i></a></span>
-                                        <span class="share-items"><a href="javascript:fbShare('https://dev-buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>', '<?php echo @$bss_value['property_name']; ?>', 'Buy Small Small Properties', 'https://dev-buy.smallsmall.com/uploads/buytolet/<?php echo $bss_value['image_folder'].'/'.$bss_value['featured_image']; ?>', 520, 350)"><i class="fa fa-facebook"></i></a></span>
-                                        <span class="share-items"><a class="whatsapp-link" href="whatsapp://send?text=https://dev-buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
+                                        <span class="share-items"><a class="js-share-twitter-link" href="https://twitter.com/intent/tweet?url=https://buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>"><i class="fa fa-twitter"></i></a></span>
+                                        <span class="share-items"><a href="javascript:fbShare('https://buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>', '<?php echo @$bss_value['property_name']; ?>', 'Buy Small Small Properties', 'https://buy.smallsmall.com/uploads/buytolet/<?php echo $bss_value['image_folder'].'/'.$bss_value['featured_image']; ?>', 520, 350)"><i class="fa fa-facebook"></i></a></span>
+                                        <span class="share-items"><a class="whatsapp-link" href="whatsapp://send?text=https://buy.smallsmall.com/property/<?php echo $bss_value['propertyID']; ?>" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
                                     </div>
-                                    <div class="cca-btn"><a target="_blank" href="https://dev-buy.smallsmall.com">Buy</a></div><div class="share-btn share-button" id="<?php echo $bss_value['propertyID']; ?>"><i class="fa fa-paper-plane"></i></div>
+                                    <div class="cca-btn"><a target="_blank" href="https://buy.smallsmall.com">Buy</a></div><div class="share-btn share-button" id="<?php echo $bss_value['propertyID']; ?>"><i class="fa fa-paper-plane"></i></div>
                                 </div>
                             </div>  
                         </div>
@@ -381,12 +381,12 @@
                     <div class="blog-item">
                         <div class="team-member wow pixFadeRight" data-wow-delay="0.5s">
                             <div class="member-avater">
-                                <img src="https://dev-rent.smallsmall.com/uploads/news/<?php echo $values['articleSlug']."/".$values['featuredImage']; ?>" alt="post-image">
+                                <img src="https://rent.smallsmall.com/uploads/news/<?php echo $values['articleSlug']."/".$values['featuredImage']; ?>" alt="post-image">
                             </div>
 
                             <div class="team-info">
                                 <h3 class="name"><?php echo $values['articleTitle']; ?></h3>
-                                <h3 class="job"><a target="_blank" href="https://dev-rent.smallsmall.com/article/<?php echo $values['articleSlug']; ?>">Read more</a></h3>
+                                <h3 class="job"><a target="_blank" href="https://rent.smallsmall.com/article/<?php echo $values['articleSlug']; ?>">Read more</a></h3>
                                 <h3 class="job"><?php echo date('jS M Y', strtotime($values['datePosted'])); ?></h3>
                             </div>
                         </div>
