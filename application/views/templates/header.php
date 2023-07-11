@@ -91,14 +91,14 @@
 							</a>
 							<ul class="site-main-menu">
 								<li>
-									<a href="https://dev-rent.smallsmall.com" target="_blank"><span style="font-size:10px;display:block;width:100%;line-height:10px;margin:0">Rent</span>RentSmallSmall</a>
+									<a href="https://rent.smallsmall.com" target="_blank"><span style="font-size:10px;display:block;width:100%;line-height:10px;margin:0">Rent</span>RentSmallSmall</a>
 
 								</li>
 								<li>
-									<a href="https://dev-buy.smallsmall.com" target="_blank"><span style="font-size:10px;display:block;width:100%;line-height:10px;margin:0">Own</span>BuySmallSmall</a>
+									<a href="https://buy.smallsmall.com" target="_blank"><span style="font-size:10px;display:block;width:100%;line-height:10px;margin:0">Own</span>BuySmallSmall</a>
 								</li>
 								<li>
-									<a href="https://dev-stay.smallsmall.com" target="_blank"><span style="font-size:10px;display:block;width:100%;line-height:10px;margin:0">Stay nightly</span>StaySmallSmall</a>
+									<a href="https://stay.smallsmall.com" target="_blank"><span style="font-size:10px;display:block;width:100%;line-height:10px;margin:0">Stay nightly</span>StaySmallSmall</a>
 								</li>								
 							</ul>
 						</div>
@@ -108,12 +108,12 @@
 								<?php if(@$userID && @$user_type == 'tenant' ){ ?>
 
 									<!--- Tenant button ---->
-									<a href="https://dev-rent.smallsmall.com/user/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
+									<a href="https://rent.smallsmall.com/user/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
 							
 								<?php }else if(@$userID && @$user_type == 'landlord' ){ ?>
 
 									<!--- Landlord button ---->
-									<a href="https://dev-rent.smallsmall.com/landlord/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
+									<a href="https://rent.smallsmall.com/landlord/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
 							
                 				<?php }else{ ?>
 
