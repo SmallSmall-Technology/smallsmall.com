@@ -108,7 +108,7 @@
 								<?php if(@$userID && @$user_type == 'tenant' ){ ?>
 
 									<!--- Tenant button ---->
-									<a href="https://rent.smallsmall.com/user/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
+									<a href="https://rent.smallsmall.com/dashboard" type="button" class="m-nav-btn nav-btn">Dashboard</a>
 							
 								<?php }else if(@$userID && @$user_type == 'landlord' ){ ?>
 
