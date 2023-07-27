@@ -6,6 +6,7 @@ RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC,OR]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://dev.smallsmall.com/$1 [R=301,L]
 
+
 # Redirect HTTP to HTTPS for non-www requests
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://dev.smallsmall.com/$1 [R=301,L]
