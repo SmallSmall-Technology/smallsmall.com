@@ -1,13 +1,13 @@
 Options -Indexes
 RewriteEngine On
 
-# Redirect www to non-www and enforce HTTPS
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://dev.smallsmall.com/$1 [R=301,L]
-
-# Redirect non-HTTPS to HTTPS for all requests
+# Force HTTPS for all requests
 RewriteCond %{HTTPS} off
-RewriteRule ^ https://dev.smallsmall.com%{REQUEST_URI} [R=301,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # If the request is not for an existing file or directory, route to index.php
 RewriteCond %{REQUEST_FILENAME} !-f
