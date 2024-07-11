@@ -48,6 +48,8 @@ class Smallsmall extends CI_Controller {
 
 		$this->load->view('index', $data);
 
+		$this->load->view('templates/blog', $data);
+
 		$this->load->view('templates/footer', $data);
 	}
 	public function about()
@@ -71,6 +73,8 @@ class Smallsmall extends CI_Controller {
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('about', $data);
+
+		$this->load->view('templates/blog', $data);
 
 		$this->load->view('templates/footer', $data);
 	}
@@ -172,6 +176,56 @@ class Smallsmall extends CI_Controller {
 		$this->load->view('terms-and-conditions', $data);
 
 		$this->load->view('templates/footer', $data);
+	}
+
+	public function register()
+	{
+	    $data['title'] = "Register";
+	    
+		if($this->session->has_userdata('loggedIn')){
+
+			$data['userID'] = $this->session->userdata('userID');			
+	
+			$data['fname'] = $this->session->userdata('fname');			
+	
+			$data['lname'] = $this->session->userdata('lname');	
+	
+			$data['user_type'] = $this->session->userdata('user_type');	
+	
+			$data['loggedIn'] = $this->session->userdata('loggedIn');
+		}
+
+
+		$this->load->view('templates/navless-header', $data);
+
+		$this->load->view('register', $data);
+
+		$this->load->view('templates/empty-footer', $data);
+	}
+
+	public function user_login()
+	{
+	    $data['title'] = "Register";
+	    
+		if($this->session->has_userdata('loggedIn')){
+
+			$data['userID'] = $this->session->userdata('userID');			
+	
+			$data['fname'] = $this->session->userdata('fname');			
+	
+			$data['lname'] = $this->session->userdata('lname');	
+	
+			$data['user_type'] = $this->session->userdata('user_type');	
+	
+			$data['loggedIn'] = $this->session->userdata('loggedIn');
+		}
+
+
+		$this->load->view('templates/navless-header', $data);
+
+		$this->load->view('register', $data);
+
+		$this->load->view('templates/empty-footer', $data);
 	}
 
 	public function login(){
