@@ -1,5 +1,6 @@
         <section class="login">
             <div class="login-container">
+                <div class="report-box"></div>
                 <div class="login-box">
                     <div class="login-box-head">Create your account </div>
                     <form id="ssRegisterForm">
@@ -40,3 +41,4 @@
                 </div>
             </div>
         </section> 
+        <script src="<?php echo base_url('assets/front/assets/js/register.js'); ?>"></script>

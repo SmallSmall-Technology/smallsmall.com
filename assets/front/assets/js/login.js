@@ -14,6 +14,10 @@ $('#ssLoginForm').submit(function(e){
 
     e.preventDefault(); 
 
+    $('.report-box').css('display', 'none');
+
+    $('.report-box').removeClass('error');
+
     $('#login-but').val('Wait...');
 
     var username = $.trim($('#username').val());
@@ -22,7 +26,11 @@ $('#ssLoginForm').submit(function(e){
 
     if(!username){
 
-        alert("Empty username field");
+        $('.report-box').css('display', 'inline-block');
+
+        $('.report-box').addClass('error');
+
+        $('.report-box').html("Empty username field");
 
         $('#username').css('border', '1px solid #F00');
 
@@ -34,7 +42,11 @@ $('#ssLoginForm').submit(function(e){
 
     if(!isEmail(username)){
 
-        alert("Wrong email format!");
+        $('.report-box').css('display', 'inline-block');
+
+        $('.report-box').addClass('error');
+
+        $('.report-box').html("Wrong email format!");
 
         $('#username').css('border', '1px solid #F00');
 
@@ -46,7 +58,11 @@ $('#ssLoginForm').submit(function(e){
 
     if(!password){
 
-        alert("Empty password field");
+        $('.report-box').css('display', 'inline-block');
+
+        $('.report-box').addClass('error');
+
+        $('.report-box').html("Empty password field");
 
         $('#username').css('border', '1px solid #0A0808');
 
@@ -75,8 +91,8 @@ $('#ssLoginForm').submit(function(e){
         success: function(data) {
 
 			if(data == 1){
-                //$('.signup-btn').val('Wait...');
-                window.location.href = baseUrl+'registration-success';
+                
+                location.reload(true);
 
 			}else{
 

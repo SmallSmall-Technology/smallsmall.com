@@ -42,6 +42,11 @@
 <body>
 		<header>
             <div class="header-inner">
-                <div class="header-logo"><a href=""><img src="assets/img/smallsmall-logo.svg" alt="smallsmall logo" /></a></div>                
+                <div class="header-logo"><a href=""><img src="assets/img/smallsmall-logo.svg" alt="smallsmall logo" /></a></div> 
+                <?php if( $page == 'login' ){ ?> 
+                    <div class="head-link">Don't have an account? <a href="<?php echo base_url('register'); ?>">Sign up</a></div>    
+                <?php }else{ ?> 
+                    <div class="head-link">Already have an account? <a href="<?php echo base_url('login'); ?>">Sign in</a></div>
+                <?php } ?>
         </header>
 		

@@ -61,6 +61,14 @@ header{
     width:150px;
     height:auto;
 }
+.head-link{
+    display:inline-block;
+    line-height:40px;
+    font-family: 'Hellix Bold';
+}
+.head-link a{
+    color: #138E3D;
+}
 .mobile-menu{
     width:40px;
     height:40px;
@@ -1018,6 +1026,22 @@ footer{
 .next-btn a{
     color: #fff;
     text-decoration: none;
+}
+.report-box{
+    width: 100%;
+    line-height: 40px;
+    color: #FFF;
+    font-family: 'Hellix Regular';
+    margin-bottom: 10px; 
+    border-radius: 4px;
+    padding: 0 10px;
+    display: none;
+}
+.report-box.success{
+    background: #63AD7E;
+}
+.report-box.error{
+    background: #f02020;
 }
 @media(max-width: 900px){
     .header-inner{

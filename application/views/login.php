@@ -1,5 +1,6 @@
         <section class="login">
             <div class="login-container">
+                <div class="report-box"></div>
                 <div class="login-box">
                     <div class="login-box-head">Welcome back! Login to SmallSmall</div>
                     <form id="ssLoginForm">

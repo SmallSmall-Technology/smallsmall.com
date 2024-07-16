@@ -178,6 +178,8 @@ class Smallsmall extends CI_Controller {
 
 	public function login_page()
 	{
+		$data['page'] = 'login';
+
 	    $data['title'] = "SmallSmall Home";
 	    
 		if($this->session->has_userdata('loggedIn')){
@@ -187,12 +189,16 @@ class Smallsmall extends CI_Controller {
 			$this->load->view('login', $data);
 
 			$this->load->view('templates/flat-footer', $data);
+		}else{
+			redirect(base_url(), 'refresh');
 		}
 		
 	}
 
 	public function register_page()
 	{
+		$data['page'] = 'register';
+
 	    $data['title'] = "SmallSmall Home";
 	    
 		if(!$this->session->has_userdata('loggedIn')){
@@ -202,6 +208,9 @@ class Smallsmall extends CI_Controller {
 			$this->load->view('register', $data);
 
 			$this->load->view('templates/flat-footer', $data);
+		}else{
+
+			redirect(base_url(), 'refresh');
 		}
 		
 	}
@@ -221,6 +230,8 @@ class Smallsmall extends CI_Controller {
 			$this->load->view('registration-success', $data);
 
 			$this->load->view('templates/flat-footer', $data);
+		}else{
+			redirect(base_url(). 'register', 'refresh');
 		}
 		
 	}

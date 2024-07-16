@@ -13,6 +13,10 @@ function isEmail(email) {
 $('#ssRegisterForm').submit(function(e){
 
     e.preventDefault();
+    
+    $('.report-box').css('display', 'none');
+
+    $('.report-box').removeClass('error');
 
     $('#register-but').html('Wait...');
 
@@ -30,11 +34,15 @@ $('#ssRegisterForm').submit(function(e){
 
     if(!isEmail(username)){
 
-        alert("Wrong email format!");
+        $('.report-box').css('display', 'inline-block');
+
+        $('.report-box').addClass('error');
+
+        $('.report-box').html("Wrong email format!");
 
         $('#username').css('border', '1px solid #F00');
 
-        $('#register-but').html('Register');
+        $('#register-but').val('Register');
 
         return false;
 
@@ -57,9 +65,13 @@ $('#ssRegisterForm').submit(function(e){
 
         success: function(data) {
 
-			if(data == 0){
+			if(data == 1){
 
-                $('#register-but').html('Register');
+                window.location.href = baseUrl+'registration-success';
+
+            }else if(data == 0){
+
+                $('#register-but').val('Register');
 
 			}else{
 
@@ -67,7 +79,7 @@ $('#ssRegisterForm').submit(function(e){
 
                 location.reload(true);
 
-				$('#register-but').html('Register');
+				$('#register-but').val('Register');
                 
                 return false;
 
@@ -78,7 +90,7 @@ $('#ssRegisterForm').submit(function(e){
 
             alert("Error: Contact admin");
 
-            $('#register-but').html('Register');
+            $('#register-but').val('Register');
 
             return false;
 
