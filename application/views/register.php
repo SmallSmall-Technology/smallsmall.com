@@ -4,38 +4,70 @@
                 <div class="login-box">
                     <div class="login-box-head">Create your account </div>
                     <form id="ssRegisterForm">
-                        <fieldset>
+                        <fieldset class="reg-1 fieldsets">
                             <div class="login-element-container double-fields">
                                 <div class="elem-container">
-                                    <input type="text" class="text-field" placeholder="First name" />
+                                    <input type="text" id="fname" class="text-field" placeholder="First name" />
                                 </div>
                                 <div class="elem-container">
-                                    <input type="text" class="text-field" placeholder="Last Name" />
+                                    <input type="text" id="lname" class="text-field" placeholder="Last Name" />
                                 </div> 
                             </div>
                             <div class="login-element-container">
-                                <input type="text" class="text-field" placeholder="Email" />
+                                <input type="text" id="email" class="text-field" placeholder="Email" />
                                 <i class="fas fa-envelope"></i>
                             </div>                        
                             <div class="login-element-container">
-                                <input type="text" class="text-field" placeholder="Phone" />
+                                <input type="text" id="phone" class="text-field" placeholder="Phone" />
                             </div>
                             <div class="login-element-container">
-                                <input type="password" class="text-field pass" placeholder="Password" />
+                                <input type="password" id="password" class="text-field pass" placeholder="Password" />
                                 <i id="show-password" class="fas fa-eye"></i>
                             </div>
                             <div class="login-element-container">
-                                <input type="password" class="text-field pass" placeholder="Confirm password" />
+                                <input type="password" id="password-2" class="text-field pass" placeholder="Confirm password" />
                             </div>
                             <div class="login-element-container">
                                 <button id="next-btn" class="login-btn next-btn"><a href="">Next</a><i class="fa fa-chevron-right"></i></button>
                             </div>
                         </fieldset>
-                        <fieldset>
-
+                        <fieldset class="reg-2 fieldsets hidden">
+                            <div class="login-element-container">
+                                <label class="select">
+                                    <select id="gender">
+                                        <option>Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </label> 
+                            </div>
+                            <div class="login-element-container">
+                                <label class="select">
+                                    <select id="refferer">
+                                        <option>How did you hear about us?</option>
+                                        <option value="Radio">Radio</option>
+                                        <option value="Female">Instagram</option>
+                                        <option value="Twitter">Twitter</option>
+                                        <option value="Facebook">Facebook</option>
+                                        <option value="WOM">Word Of Mouth</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </label> 
+                            </div>
+                            <div class="login-element-container">
+                                <input type="text" id="refferal-code" class="text-field" placeholder="Referral Code (Optional)" />
+                            </div> 
+                            <div class="login-element-container">
+                                <input type="submit" class="reg-btn" value="Sign up" />
+                            </div>
                         </fieldset>
                     </form>
                 </div>
+                <ul class="form-paginator">
+                    <li class="form-page active first-page"></li>
+                    <li class="form-page second-page"></li>
+                    <li></li>
+                </ul>
                 <div class="forgot-password-box">
                 By signing up for an account you agree to our <a href="">Privacy Policy</a> and <a href="">Terms of use</a>.
                 </div>

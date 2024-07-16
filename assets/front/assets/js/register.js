@@ -9,6 +9,12 @@ function isEmail(email) {
    return regex.test(email);
 
 }
+$('#next-btn').click(function(){
+    $('.reg-1').addClass('hidden');
+    $('.reg-2').removeClass('hidden');
+    $('.first-page').removeClass('active');
+    $('.second-page').addClass('active');
+});
 
 $('#ssRegisterForm').submit(function(e){
 
@@ -26,11 +32,17 @@ $('#ssRegisterForm').submit(function(e){
 
     var username = $('#email').val();
 
-    var userType = $('#userType').val();
+    var userType = 'Tenant';
 
     var phone = $('#phone').val();
 
     var password = $('#password').val();
+
+    var gender = $('#gender').val();
+
+    var refferer = $('#refferer').val();
+
+    var refferal_code = $('#refferal-code').val();
 
     if(!isEmail(username)){
 
@@ -49,7 +61,7 @@ $('#ssRegisterForm').submit(function(e){
     }
 
 
-    var data = {"fname" : fname, "lname" : lname, "username" : username, "phone" : phone, "password" : password, "userType" : userType};
+    var data = { "fname" : fname, "lname" : lname, "username" : username, "phone" : phone, "password" : password, "userType" : userType, 'gender' : gender, 'refferal_code' : refferal_code, 'refferer' : refferer };
 
     $.ajaxSetup ({ cache: false });
 

@@ -1045,6 +1045,29 @@ footer{
 }
 fieldset{
     border: 0;
+    padding: 0;
+}
+fieldset.hidden{
+    display: none;
+}
+.form-paginator{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-paginator .form-page{
+    width: 10px;
+    height: 10px;
+    background: #ABBBCC;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.form-paginator .form-page.active{
+    background: #138E3D;
 }
 @media(max-width: 900px){
     .header-inner{
