@@ -2,48 +2,24 @@
             <h3 class="head-title">Get the latest from Smallsmall</h3>
             <div class="section-inner">
                 <ul class="blog-container">
+                <?php if(isset($articles) && !empty($articles)){ ?>
+                    <?php foreach($articles as $article => $values){ ?>
                     <li class="blog-item">
                         <div class="blog-image">
-                            <img src="assets/images/blog-image-1.png" />
+                            <img src="https://dev-rent.smallsmall.com/uploads/news/<?php echo $values['articleSlug']."/".$values['featuredImage']; ?>" />
                         </div>
                         <div class="blog-item-bottom">
                             <div class="blog-item-title">
-                                Listen to our podcast
+                                <?php echo $values['articleTitle']; ?>
                             </div>
-                            <div class="blog-item-excerpt">
+                            <!---<div class="blog-item-excerpt">
                                 Join our engaging podcast discussions and stay ahead of economic opportunities in the instalment payment industry.
-                            </div>
-                            <a class="blog-item-btn" href="">Podcast</a>
+                            </div>--->
+                            <a class="blog-item-btn" target="_blank" href="https://dev-rent.smallsmall.com/article/<?php echo $values['articleSlug']; ?>">Read More</a>
                         </div>
                     </li>
-                    <li class="blog-item">
-                        <div class="blog-image">
-                            <img src="assets/images/blog-image-2.png" />
-                        </div>
-                        <div class="blog-item-bottom">
-                            <div class="blog-item-title">
-                                Read our Articles
-                            </div>
-                            <div class="blog-item-excerpt">
-                                Explore our curated articles to learn more about unlocking access, flexibility, and quality living.
-                            </div>
-                            <a class="blog-item-btn" href="">Blog</a>
-                        </div>
-                    </li>
-                    <li class="blog-item">
-                        <div class="blog-image">
-                            <img src="assets/images/blog-image-3.png" />
-                        </div>
-                        <div class="blog-item-bottom">
-                            <div class="blog-item-title">
-                                See us in the news
-                            </div>
-                            <div class="blog-item-excerpt">
-                                Explore our curated articles to learn more about unlocking access, flexibility, and quality living. 
-                            </div>
-                            <a class="blog-item-btn" href="">News</a>
-                        </div>
-                    </li>
+                    <?php } ?>
+                <?php } ?>                    
                 </ul>
             </div>
         </section>
