@@ -1043,6 +1043,9 @@ footer{
 .report-box.error{
     background: #f02020;
 }
+fieldset{
+    border: 0;
+}
 @media(max-width: 900px){
     .header-inner{
         width:95%;
