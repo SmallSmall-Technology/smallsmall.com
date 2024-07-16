@@ -34,22 +34,25 @@ class Smallsmall extends CI_Controller {
 	
 			$data['loggedIn'] = $this->session->userdata('loggedIn');
 		}
-		$data['articles'] = $this->smallsmall_model->get_blog_snippets();
+		//$data['articles'] = $this->smallsmall_model->get_blog_snippets();
 
-		$data['rss_properties'] = $this->smallsmall_model->get_rss_properties();
+		//$data['rss_properties'] = $this->smallsmall_model->get_rss_properties();
 
-		$data['bss_properties'] = $this->smallsmall_model->get_bss_properties();
+		//$data['bss_properties'] = $this->smallsmall_model->get_bss_properties();
 		
-		$data['sss_properties'] = $this->smallsmall_model->get_sss_properties();
+		//$data['sss_properties'] = $this->smallsmall_model->get_sss_properties();
 		
-		$data['notifications'] = $this->smallsmall_model->fetchNotification();
+		//$data['notifications'] = $this->smallsmall_model->fetchNotification();
 
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('index', $data);
 
+		$this->load->view('templates/blog', $data);
+
 		$this->load->view('templates/footer', $data);
 	}
+
 	public function about()
 	{
 	    $data['title'] = "SmallSmall About Us";
@@ -67,13 +70,15 @@ class Smallsmall extends CI_Controller {
 			$data['loggedIn'] = $this->session->userdata('loggedIn');
 		}
 
-
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('about', $data);
 
+		$this->load->view('templates/blog', $data);
+
 		$this->load->view('templates/footer', $data);
 	}
+
 	public function about_us()
 	{
 	    $data['title'] = "SmallSmall About Us";
@@ -116,7 +121,6 @@ class Smallsmall extends CI_Controller {
 			$data['loggedIn'] = $this->session->userdata('loggedIn');
 		}
 
-
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('privacy-policy', $data);
@@ -140,7 +144,6 @@ class Smallsmall extends CI_Controller {
 	
 			$data['loggedIn'] = $this->session->userdata('loggedIn');
 		}
-
 
 		$this->load->view('templates/header', $data);
 
@@ -166,12 +169,60 @@ class Smallsmall extends CI_Controller {
 			$data['loggedIn'] = $this->session->userdata('loggedIn');
 		}
 
-
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('terms-and-conditions', $data);
 
 		$this->load->view('templates/footer', $data);
+	}
+
+	public function login_page()
+	{
+	    $data['title'] = "SmallSmall Home";
+	    
+		if($this->session->has_userdata('loggedIn')){
+
+			$this->load->view('templates/navless-header', $data);
+
+			$this->load->view('login', $data);
+
+			$this->load->view('templates/flat-footer', $data);
+		}
+		
+	}
+
+	public function register_page()
+	{
+	    $data['title'] = "SmallSmall Home";
+	    
+		if(!$this->session->has_userdata('loggedIn')){
+
+			$this->load->view('templates/navless-header', $data);
+
+			$this->load->view('register', $data);
+
+			$this->load->view('templates/flat-footer', $data);
+		}
+		
+	}
+
+	public function registration_success()
+	{
+	    $data['title'] = "SmallSmall Home";
+	    
+		if(!$this->session->has_userdata('loggedIn') && $this->session->has_userdata('email')){		
+	
+			$data['name'] = $this->session->userdata('name');			
+	
+			$data['email'] = $this->session->userdata('email');	
+
+			$this->load->view('templates/navless-header', $data);
+
+			$this->load->view('registration-success', $data);
+
+			$this->load->view('templates/flat-footer', $data);
+		}
+		
 	}
 
 	public function login(){
@@ -254,6 +305,8 @@ class Smallsmall extends CI_Controller {
 				
 				$data['email'] = $email;
 
+				$user = array('name' => $fname, 'email' => $email);
+
 				$this->email->from('donotreply@smallsmall.com', 'SmallSmall');
 
 				$this->email->to($email);
@@ -273,6 +326,8 @@ class Smallsmall extends CI_Controller {
 				$emailRes = $this->email->send();
 				
 				if($emailRes){
+
+					$this->session->set_userdata($user);
 					
 					echo 1; 
 						

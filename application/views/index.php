@@ -1,13 +1,13 @@
-<section>
-    <?php if(isset($notifications) && !empty($notifications)){ ?>
+<!---<section>
+    <?php //if(isset($notifications) && !empty($notifications)){ ?>
         <div id="notification-bar-home" class="notification-bar-home">
             <div id="notification-container">
                 <span id="notification-icn">New</span>
-                <span id="notification-details"><?php echo $notifications['message']; ?></span>
-                <span id="notification-lnk"><a target="_blank" href="<?php echo $notifications['notification_link']; ?>"><i class="fa fa-angle-right"></i></a></span>
+                <span id="notification-details"><?php //echo $notifications['message']; ?></span>
+                <span id="notification-lnk"><a target="_blank" href="<?php //echo $notifications['notification_link']; ?>"><i class="fa fa-angle-right"></i></a></span>
             </div>
         </div>
-    <?php } ?>
+    <?php //} ?>
     <div class="row life_starts">
         <div class="col-9 mx-auto">
             <div class="text-center">
@@ -22,7 +22,7 @@
                 <div class="banner-button-container">
                 <div class="col appstores">
                     <a type="button" data-toggle="modal" data-target="#exampleModalCenter2" onclick="switchVisible();" class="pxs-btn button-3d wow pixFadeUp create_account" data-wow-delay="0.6s" style="color:white !important">Create account</a>
-                    <a target="_blank" href="https://apps.apple.com/us/app/smallsmall/id1643608622"><img class="pxs-btn banner-btn wow pixFadeUp appstore" src="<?php echo base_url(); ?>assets/front/assets/img/apple.svg" alt="appstore" data-wow-delay="0.6s"></a>
+                    <a target="_blank" href="https://apps.apple.com/us/app/smallsmall/id1643608622"><img class="pxs-btn banner-btn wow pixFadeUp appstore" src="<?php //echo base_url(); ?>assets/front/assets/img/apple.svg" alt="appstore" data-wow-delay="0.6s"></a>
                     <a href="https://play.google.com/store/apps/details?id=com.smallsmall.mobile" target="_blank"><img class="pxs-btn banner-btn wow pixFadeUp googleplay" src="assets/front/assets/img/playstore.svg" alt="playstore" data-wow-delay="0.6s"></a>
                 </div>
             </div>
@@ -30,208 +30,215 @@
             </div>
         </div>
     </div>
-</section>
-<!---<section>
-    <div class="row journey">
-        <div class="col-9 mx-auto">
-            <div class="text-center">
-                <h3 class="the_journey wow pixFadeUp" data-wow-delay="0.3s">
-                    The journey
-                </h3>
-                                
-                <p class="we_believe wow pixFadeUp" data-wow-delay="0.5s">
-                    We believe that quality living should be the standard of living <br>everywhere. It is this passion that drives us in providing innovative <br>solutions through our products that affords our customers flexibility and convenience.
-                </p>
-
-                <div class="readmore">
-                    <a href="https://dev.smallsmall.com/about" class="pxs-btn button-3d wow pixFadeUp googleplay" data-wow-delay="0.6s">
-                        Read more
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </div>
 </section>--->
-<section class="web">
-    <div class="row journey">
-        <div class="col-9 mx-auto">
-            <div class="text-center">
-                <h3 class="the_journey wow pixFadeUp" data-wow-delay="0.3s">
-                    Ready to get started?
-                </h3>
-                <p class="description wow pixFadeUp" data-wow-delay="0.5s">
-                    There's a new way to live
-                </p>
-                <div class="get-started-main-block">
-                    <div class="get-started-block">
-                        <div class="block-item">
-                            <div class="welcome-image rent-ss">
-
-                            </div>
-                            <div class="welcome-txt">
-                                <span><b>0%</b> on agency and Legal fees</span>
-                                <span><b>18</b> Locations</span>
-                                <span><b>N1.6bn</b> saved on agency and Legal fees</span>
+<section>
+            <div class="section-inner hero">
+                <div class="hero-text">
+                    <h3>Finally, your unfair advantage..</h3>
+                    <h1>Enjoy quality life on your terms and within your means.</h1>
+                    <div class="hero-note">Our Innovative housing solutions makes affordable homes and quality living a reality for the average person. No more sacrificing your dreams due to down payments, credit issues or overwhelming costs — we've eliminated the financial barrier.</div>
+                    <div class="hero-button"><a href="<?php echo base_url('register'); ?>">Get started <i class="fa fa-chevron-right"></i></a></div>
+                </div>
+                <div class="hero-image hero">
+                    <img src="assets/images/man-relaxing-on-chair-cleaned-edges.svg" alt="Man sitting on sofa" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner partner-logos">
+                <ul class="partner-logo-container">
+                    <li class="partner-logo">Backed by</li>
+                    <li class="partner-logo"><img src="assets/images/techstars.svg" alt="Techstars Logo" /></li>
+                    <li class="partner-logo"><img src="assets/images/oyster-ventures.svg" alt="Oyster Ventures Logo" /></li>
+                    <li class="partner-logo"><img src="assets/images/berrywood.svg" alt="Berrywood Logo" /></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h1 class="head-title">Our housing solution for everyone<br />no matter your class</h1>
+            <div class="section-inner renters">                
+                <div class="renters-image renters desktop">
+                    <!---<img src="assets/images/relaxed-african-american-woman-enjoying-music-on-couch.svg" alt="Woman sitting on sofa" />--->
+                </div>
+                <div class="renters-image mobile">
+                    <img src="assets/images/relaxed-african-american-woman-enjoying-music-on-couch.svg" alt="Woman sitting on sofa" />
+                </div>
+                <div class="renters-text">
+                    <h5>For renters</h5>
+                    <h3>RENTSMALLSMALL</h3>
+                    <h1>Bid farewell to upfront rent payment.</h1>
+                    <div class="renters-note">Experience the freedom of flexible home rental payment that aligns with your financial capacity. Enjoy quality of life at your own pace without draining your savings.</div>
+                    <div class="renters-benefits">
+                        <div class="benefit">
+                            <div class="benefit-head">Easy & Flexible</div>
+                            <div class="benefit-txt">
+                                Pay as you go each month without the burden of upfront payment. 
                             </div>
                         </div>
-                        <div class="block-item">
-                            <div class="large-txt">A smart way to <br />live & pay <br />rent flexibly.</div>
-                            <div class="head-txt">RentSmallSmall</div>
-                            <!--<div class="small-txt">Pay monthly in any of our units, your choice.</div>-->
-                            <div class="explore-txt white-color"><a target="_blank" href="https://rent.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                        <div class="benefit">
+                            <div class="benefit-head">Simple</div>
+                            <div class="benefit-txt">
+                                Simplify your housing situation and focus on what truly matters in life. 
+                            </div>                            
                         </div>
                     </div>
-                    <div class="get-started-block">
-                        <div class="welcome-image stay-ss">
-
-                        </div> 
-                        <div class="block-item-full">
-                            <div class="large-enf-blk-txt">Affordable nightly stay</div>
-                            <div class="head-blk-txt">StaySmallSmall</div>                            
-                            <div class="explore-txt blk-color"><a target="_blank" href="https://stay.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
-                        </div>                       
-                    </div>
-                    <div class="get-started-block">
-                        <div class="welcome-image btl-ss">
-                        </div>  
-                        <div class="block-item-full">
-                            <div class="large-enf-txt">Buy real estate & start earning guaranteed rent</div>
-                            <div class="head-txt">BuySmallSmall</div>
-
-                            <div class="explore-txt white-color"><a target="_blank" href="https://buy.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
-                            
+                    <div class="renters-btn"><a href="https://rent.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="desktop">
+            <div class="section-inner buyers">
+                <div class="buyers-image">
+                    <img src="assets/images/happy-couple.svg" alt="Happy couple" />
+                    <div class="buyers-image-overlay">
+                        <div class="buyers-text purple">
+                            <h5>For buyers</h5>
+                            <h3>BUYSMALLSMALL</h3>
+                            <h1>Owning a home is now possible.</h1>
+                            <div class="buyers-note">Our cutting-edge solution allows you to own your dream home within your budget and build a solid financial foundation for you and your loved ones.</div>
+                            <div class="buyers-benefits">
+                                <div class="buyer-benefit">
+                                    <div class="benefit-head">Buy Now, Pay Later</div>
+                                    <div class="benefit-txt">
+                                        Enjoy low upfront costs and pay over time at your convenience. 
+                                    </div> 
+                                    <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
+                                </div>
+                                <div class="buyer-benefit">
+                                    <div class="benefit-head">Buy2Co-Own</div>
+                                    <div class="benefit-txt">
+                                        Take your first step to homeownership with just N4,000. 
+                                    </div>  
+                                    <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                            
+                                </div>
+                                <div class="buyer-benefit">
+                                    <div class="benefit-head">Own Now, Pay Later</div>
+                                    <div class="benefit-txt">
+                                        Enjoy a flexible pathway to own your dream home today and pay on your terms.
+                                    </div> 
+                                    <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
+                                </div>
+                                <div class="buyer-benefit">
+                                    <div class="benefit-head">Buy2Let</div>
+                                    <div class="benefit-txt">
+                                    Unlock your path to financial security and build a robust real estate portfolio with ease.
+                                    </div> 
+                                    <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="mobile">
-    <div class="row journey">
-        <div class="col-11 mx-auto">
-            <div class="text-center">
-                <h3 class="the_journey wow pixFadeUp" data-wow-delay="0.3s">
-                    Ready to get started?
-                </h3>
-                <p class="description wow pixFadeUp" data-wow-delay="0.5s">
-                    There's a new way to live
-                </p>
-                <div class="get-started-main-block">
-                    <div class="get-started-block">
-                        <div class="block-item">
-                            <div class="welcome-image rent-ss">
+        </section>
 
-                            </div>
-                            <div class="welcome-txt">
-                                <span><b>0%</b> on agency and Legal fees</span>
-                                <span><b>18</b> Locations</span>
-                                <span><b>N1.6bn</b> saved on agency and Legal fees</span>
-                            </div>
+        <section class="mobile">
+            <div class="section-inner renters">                
+                <div class="renters-image">
+                    <img src="assets/images/happy-couple-mobile.svg" alt="Happy couple" />
+                </div>
+                <div class="middle-class-text">
+                    <h5>For buyers</h5>
+                    <h3>BUYSMALLSMALL</h3>
+                    <h1>Owning a home is now possible.</h1>
+                    <div class="renters-note">Our cutting-edge solution allows you to own your dream home within your budget and build a solid financial foundation for you and your loved ones.</div>
+                    <div class="buyers-benefits">
+                        <div class="buyer-benefit">
+                            <div class="benefit-head">Buy Now, Pay Later</div>
+                            <div class="benefit-txt">
+                                Enjoy low upfront costs and pay over time at your convenience. 
+                            </div> 
+                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
                         </div>
-                        <div class="block-item">
-                            <div class="large-txt">A smart way to <br />live & pay <br />rent flexibly.</div>
-                            <div class="head-txt">RentSmallSmall</div>
-                            <!--<div class="small-txt">Pay monthly in any of our units, your choice.</div>-->
-                            <div class="explore-txt white-color"><a target="_blank" href="https://rent.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
+                        <div class="buyer-benefit">
+                            <div class="benefit-head">Buy2Co-Own</div>
+                            <div class="benefit-txt">
+                                Take your first step to homeownership with just N4,000. 
+                            </div>  
+                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                            
                         </div>
-                    </div>
-                    <div class="get-started-block">
-                        <div class="welcome-image stay-ss">
-
-                        </div> 
-                        <div class="block-item-full">
-                            <div class="large-enf-blk-txt">Affordable nightly stay</div>
-                            <div class="head-blk-txt">StaySmallSmall</div>                            
-                            <div class="explore-txt blk-color"><a target="_blank" href="https://stay.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
-                        </div>                       
-                    </div>
-                    <div class="get-started-block">
-                        <div class="welcome-image btl-ss">
-                        </div>  
-                        <div class="block-item-full">
-                            <div class="large-enf-txt">Buy real estate & start earning guaranteed rent</div>
-                            <div class="head-txt">BuySmallSmall</div>
-
-                            <div class="explore-txt white-color"><a target="_blank" href="https://buy.smallsmall.com">Explore <i class="fa fa-arrow-right"></i></a></div>
-                            
+                        <div class="buyer-benefit">
+                            <div class="benefit-head">Own Now, Pay Later</div>
+                            <div class="benefit-txt">
+                                Enjoy a flexible pathway to own your dream home today and pay on your terms.
+                            </div> 
+                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
+                        </div>
+                        <div class="buyer-benefit">
+                            <div class="benefit-head">Buy2Let</div>
+                            <div class="benefit-txt">
+                            Unlock your path to financial security and build a robust real estate portfolio with ease.
+                            </div> 
+                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                           
                         </div>
                     </div>
+                    <div class="middle-class-btn"><a href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a></div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- /.featured -->
+        </section>
 
-<!-- redesigned -->
-
-<!--========================-->
-<!--=         Blog         =-->
-<!--========================-->
-<!---<section class="teams-two">
-    <div class="container">
-        <div class="section-title text-center">
-            <h3 class="blog-sub-title wow pixFadeUp">Blogs on living a quality life</h3>
-            <h2 class="team-small-title wow pixFadeUp" data-wow-delay="0.3s">Join our lifestyle community today and get up to date lifestyle tips </h2>
-        </div>--->
-        <!----Web view for blog posts ---->
-        <!---<div class="row justify-content-center">
-            <?php //if(isset($articles) && !empty($articles)){ ?>
-                <?php //foreach($articles as $article => $values){ ?>
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-member wow pixFadeRight" data-wow-delay="0.5s">
-                            <div class="member-avater">
-                                <img src="https://rent.smallsmall.com/uploads/news/<?php //echo $values['articleSlug']."/".$values['featuredImage']; ?>" alt="post-image">
-                            </div>
-
-                            <div class="team-info">
-                                <h3 class="name"><?php //echo $values['articleTitle']; ?></h3>
-                                <h3 class="job"><a target="_blank" href="https://rent.smallsmall.com/article/<?php //echo $values['articleSlug']; ?>">Read more</a></h3>
-                                <h3 class="job"><?php //echo date('jS M Y', strtotime($values['datePosted'])); ?></h3>
+        <section>
+            <div class="section-inner employees">                
+                
+                <div class="employees-text">
+                    <h5>For employees</h5>
+                    <h3>HOUSEHMO</h3>
+                    <h1>Innovative housing benefits for your team</h1>
+                    <div class="employees-note">Your employees are your most invaluable assets. Attract and retain top talent by investing in their well-being beyond the office walls.</div>
+                    <div class="employees-benefits">
+                        <div class="benefit">
+                            <div class="benefit-head">Invest in your company's A-players</div>
+                            <div class="benefit-txt">
+                                Don't lose your elite talent to deep-pocketed competitors - invest in their future with HouseHMO's unbeatable housing benefits. 
                             </div>
                         </div>
-                    </div>
-                <?php //} ?>
-            <?php //} ?>
-        </div>--->
-        <!----Web view for blog posts ---->
-    <!---</div>
-</section>--->
-<section class="teams-two">
-    <div class="container">
-        <div class="section-title text-center">
-            <h3 class="blog-sub-title wow pixFadeUp">Blogs on living a quality life</h3>
-            <h2 class="team-small-title wow pixFadeUp" data-wow-delay="0.3s">Join our lifestyle community today and get up to date lifestyle tips </h2>
-        </div>
-
-        <!----Mobile view for blog posts ---->
-        <div class="blog-posts-container">
-            <?php if(isset($articles) && !empty($articles)){ ?>
-                <?php foreach($articles as $article => $values){ ?>
-                    
-                    <div class="blog-item">
-                        <div class="team-member wow pixFadeRight" data-wow-delay="0.5s">
-                            <div class="member-avater">
-                                <img src="https://rent.smallsmall.com/uploads/news/<?php echo $values['articleSlug']."/".$values['featuredImage']; ?>" alt="post-image">
-                            </div>
-
-                            <div class="team-info">
-                                <h3 class="name"><?php echo $values['articleTitle']; ?></h3>
-                                <h3 class="job"><a target="_blank" href="https://rent.smallsmall.com/article/<?php echo $values['articleSlug']; ?>">Read more</a></h3>
-                                <h3 class="job"><?php echo date('jS M Y', strtotime($values['datePosted'])); ?></h3>
-                            </div>
+                        <div class="benefit">
+                            <div class="benefit-head">Empower employee futures</div>
+                            <div class="benefit-txt">
+                                Your people are shining performers who deserve generous opportunities for long-term financial empowerment and success. 
+                            </div>                            
                         </div>
                     </div>
-                <?php } ?>
-            <?php } ?>
-        </div>
-        <!----Mobile view for blog posts ---->
+                    <div class="employees-btn"><a href="#">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                </div>
+                <div class="employees-image employees">
+                    <!---<img src="assets/images/office-guys-working.svg" alt="Woman sitting on sofa" />--->
+                </div>
+                <div class="employees-image mobile">
+                    <img src="assets/images/office-guys-working.svg" alt="Woman sitting on sofa" />
+                </div>
+            </div>
+        </section>
 
-    </div>
-</section>
+        <!---<section>
+            <div class="section-inner renters">                
+                <div class="renters-image">
+                    <img src="assets/images/joyful-african-american-couple-with-colorful-shopping-bags.svg" alt="Joyful African Couple" />
+                </div>
+                <div class="middle-class-text">
+                    <h5>For the middle class</h5>
+                    <h3>FAIR BY SMALLSMALL</h3>
+                    <h1>Innovative housing benefits for your team</h1>
+                    <div class="renters-note">Your employees are your most invaluable assets. Attract and retain top talent by investing in their well-being beyond the office walls.</div>
+                    <div class="renters-benefits">
+                        <div class="benefit">
+                            <div class="benefit-head">Invest Your Company A-Players</div>
+                            <div class="benefit-txt">
+                                Don't lose your elite talent to deep-pocketed competitors – invest in their future with HouseHMO's unbeatable housing benefits. 
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-head">Empower Employee Futures</div>
+                            <div class="benefit-txt">
+                            Your people are shining performers who deserve generous opportunities for long-term financial empowerment and success. 
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="middle-class-btn"><a href="">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+        </section>--->
 <script src="<?php echo base_url('assets/front/assets/js/share-button-action.js'); ?>"></script>
 <script>
     function fbShare(url, title, descr, image, winWidth, winHeight) {

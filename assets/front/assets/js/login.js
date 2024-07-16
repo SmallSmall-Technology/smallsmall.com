@@ -12,9 +12,9 @@ function isEmail(email) {
 
 $('#ssLoginForm').submit(function(e){
 
-    e.preventDefault();
+    e.preventDefault(); 
 
-    $('#login-but').html('Wait...');
+    $('#login-but').val('Wait...');
 
     var username = $.trim($('#username').val());
 
@@ -26,7 +26,7 @@ $('#ssLoginForm').submit(function(e){
 
         $('#username').css('border', '1px solid #F00');
 
-        $('#login-but').html('Login');
+        $('#login-but').val('Login');
 
         return false;
 
@@ -38,7 +38,7 @@ $('#ssLoginForm').submit(function(e){
 
         $('#username').css('border', '1px solid #F00');
 
-        $('#login-but').html('Login');
+        $('#login-but').val('Login');
 
         return false;
 
@@ -52,7 +52,7 @@ $('#ssLoginForm').submit(function(e){
 
         $('#password').css('border', '1px solid #F00');
 
-        $('#login-but').html('Login');
+        $('#login-but').val('Login');
 
         return false;
 
@@ -76,13 +76,13 @@ $('#ssLoginForm').submit(function(e){
 
 			if(data == 1){
                 //$('.signup-btn').val('Wait...');
-                location.reload(true);
+                window.location.href = baseUrl+'registration-success';
 
 			}else{
 
                 alert("Username/Password incorrect");
 
-				$('#login-but').html('Login');
+				$('#login-but').val('Login');
                 
                 return false;
 
@@ -93,7 +93,7 @@ $('#ssLoginForm').submit(function(e){
 
             alert("Error: Contact admin");
 
-            $('#login-but').html('Login');
+            $('#login-but').val('Login');
 
             return false;
 

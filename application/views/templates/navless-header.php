@@ -25,40 +25,23 @@
     <meta property="og:site_name" content="Rent and Buy apartments in Nigeria with flexible monthly payment" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Meta Data -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	
 	<title>Smallsmall</title>
 
 	<link rel="icon" href="<?php echo base_url(); ?>assets/front/assets/img/fav.png" type="image/x-icon" />
-	<!-- Dependency Styles -->
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/fontawesome/css/all.min.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/swiper/css/swiper.min.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/wow/css/animate.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
 
-	<!-- Site Stylesheet -->
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/assets/css/app.css?version=<?php echo rand(199, 99999999); ?>" type="text/css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css?version=<?php echo rand(99, 9999999); ?>" type="text/css" media="all">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/select-menu.css?version=<?php echo rand(99, 9999999); ?>" type="text/css" media="all">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" type="text/css" media="all">
 
-	<!-- Google Web Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com/">
-	<link href="http://fonts.cdnfonts.com/css/gothaem?styles=17581,17583,17585,17587,17579,17588,17589" rel="stylesheet">
-
-	<!-- swiper cnd -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/front/dependencies/swiper/css/newcss.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	
-    <script src="<?php echo base_url(); ?>assets/front/dependencies/jquery/jquery.min.js"></script>
 
 </head>
-<body id="home-version-1" class="home-version-3" data-style="default">
-	<a href="#main_content" data-type="section-switch" class="return-to-top">
-		<i class="fa fa-chevron-up"></i>
-	</a>
-	<div id="main_content">
-		
+<body>
+		<header>
+            <div class="header-inner">
+                <div class="header-logo"><a href=""><img src="assets/img/smallsmall-logo.svg" alt="smallsmall logo" /></a></div>                
+        </header>
 		
