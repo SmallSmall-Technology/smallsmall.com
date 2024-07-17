@@ -11,7 +11,7 @@
                         <div class="footer-links-head">Products</div>
                         <div class="footer-links"><a href="https://rent.smallsmall.com">RentSmallSmall</a></div>
                         <div class="footer-links"><a href="https://buy.rentsmallsmll.com">BuySmallSmall</a></div>
-                        <div class="footer-links"><a href="#">HouseHMO</a></div>
+                        <div class="footer-links"><a target="_blank" href="https://househmo.smallsmall.com/">HouseHMO</a></div>
                         <div class="footer-links"><a href="#">Fair by SmallSmall</a></div>
                     </div>
                     <div class="links-container">

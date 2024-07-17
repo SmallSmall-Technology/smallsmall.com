@@ -60,7 +60,7 @@
                                     </span>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">HouseHMO</a>
+                                    <a target="_blank" href="https://househmo.smallsmall.com/">HouseHMO</a>
                                     <span class="menu-description">
                                         Invest in your employees' well-being beyond the workplace.
                                     </span>

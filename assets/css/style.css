@@ -205,6 +205,7 @@ section h3.head-title{
 }
 section .section-inner{
     width: 90%;
+    max-width: 1300px;
     margin:auto;    
     position: relative;
 }
@@ -1020,6 +1021,7 @@ footer{
 }
 .content-inner{
     width: 80%;
+    max-width: 1300px;
     margin: auto;
     padding: 50px 0;
 }

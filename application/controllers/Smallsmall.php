@@ -34,7 +34,7 @@ class Smallsmall extends CI_Controller {
 	
 			$data['loggedIn'] = $this->session->userdata('loggedIn');
 		}
-		//$data['articles'] = $this->smallsmall_model->get_blog_snippets();
+		$data['articles'] = $this->smallsmall_model->get_blog_snippets();
 
 		//$data['rss_properties'] = $this->smallsmall_model->get_rss_properties();
 
