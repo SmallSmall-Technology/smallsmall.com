@@ -21,7 +21,7 @@
         <section>
             <div class="section-inner about-us">
                 <div class="top-title">Our impact</div>
-                <div class="large-title">Lorem ipsum dolor  consectetur adipiscing</div>
+                <div class="large-title">Quality living is not just for the 1%<br />but the 99%</div>
                 <div class="about-impact">
                       <div class="impact-item">
                         <div class="impact-img"><img src="<?php echo base_url(); ?>assets/img/loan.svg" alt="Loan icon" /></div>
@@ -47,22 +47,22 @@
                 <div class="top-title">Meet the team</div>
                 <div class="large-title">Our grand vision is to normalize quality living in Africa</div>
                 <div class="about-team">
-                      <div class="team-item">
-                        <div class="team-member-image"></div>
+                <div class="team-item">
+                        <div class="team-member-image"><img src="<?php echo base_url(); ?>assets/images/tunde.png" alt="Tunde Balogun" /></div>
                         <div class="team-member-details">
                             <div class="member-name">Tunde Balogun</div>
                             <div class="member-position">Ceo/ Co-Founder</div>
                         </div>
                       </div>
                       <div class="team-item">
-                        <div class="team-member-image"></div>
+                        <div class="team-member-image"><img src="<?php echo base_url(); ?>assets/images/naomi.png" alt="Naomi Olaghere" /></div>
                         <div class="team-member-details">
                             <div class="member-name">Naomi Olaghere</div>
                             <div class="member-position">Vp, Operations/ Co-Founder</div>
                         </div>
                       </div>
                       <div class="team-item">
-                        <div class="team-member-image"></div>
+                        <div class="team-member-image"><img src="<?php echo base_url(); ?>assets/images/pidah.png" alt="Pidah Tnadah" /></div>
                         <div class="team-member-details">
                             <div class="member-name">Pidah Tnadah</div>
                             <div class="member-position">Vp, Product & Technology/Co-Founder</div>

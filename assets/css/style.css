@@ -933,8 +933,17 @@ footer{
     left: 0;
     background: #e9f4ec;
 }
+.team-member-image img{
+    width:80%;
+    height: 80%;
+    object-fit:contain;
+    position:absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 6;
+}
 .team-member-details{
-    padding: 20px;
+    padding: 20px 10px 20px 30px;
     background: #FFF;
     position: absolute;
     top: 30px;
