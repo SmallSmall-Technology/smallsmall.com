@@ -182,7 +182,7 @@ class Smallsmall extends CI_Controller {
 
 	    $data['title'] = "SmallSmall Home";
 	    
-		if($this->session->has_userdata('loggedIn')){
+		if(!$this->session->has_userdata('loggedIn')){
 
 			$this->load->view('templates/navless-header', $data);
 
