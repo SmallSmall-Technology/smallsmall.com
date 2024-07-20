@@ -315,6 +315,7 @@ section.login{
     font-size: 17px;
     border-radius: 5px;
     border: 0;
+    display: inline-block;
     float: right;
 }
 .login-btn:hover{
