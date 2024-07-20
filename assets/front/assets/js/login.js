@@ -96,7 +96,11 @@ $('#ssLoginForm').submit(function(e){
 
 			}else{
 
-                alert("Username/Password incorrect");
+                $('.report-box').css('display', 'inline-block');
+
+                $('.report-box').addClass('error');
+
+                $('.report-box').html("Username/Password incorrect");
 
 				$('#login-but').val('Login');
                 

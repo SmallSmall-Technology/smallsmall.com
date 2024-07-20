@@ -37,15 +37,13 @@ class Smallsmall_model extends CI_Model {
 
 	}
 
-	public function login_user($username, $password){
+	public function get_user_details($id){
 
         $this->db->select('*');
 
         $this->db->from('user_tbl');
 
-        $this->db->where('email', $username);
-
-        $this->db->where('password', $password);
+        $this->db->where('userID', $id);
 
         $query = $this->db->get();
 
@@ -53,28 +51,18 @@ class Smallsmall_model extends CI_Model {
 
     }
     
-    public function check_email($email){
+    public function check_email($email)
+	{
 
-		$this->db->select('email');
+		$this->db->select('email, password, userID');
 
 		$this->db->from('user_tbl');
 
 		$this->db->where('email', $email);
 
-		$this->db->limit(1);
-
 		$query = $this->db->get();
 
-		if($query->num_rows() > 0){
-
-			return 1;
-
-		}else{
-
-			return 0;
-			
-		}
-
+		return $query->row_array();
 	}
 
 
@@ -243,6 +231,32 @@ class Smallsmall_model extends CI_Model {
 	    $query = $this->db->get();
 	    
 	    return $query->row_array();
+	}
+
+    public function update_password_to_hash($id, $password){
+
+		$new_password = array("password" => $password);
+
+		$this->db->where('userID', $id);
+
+		if($this->db->update('user_tbl', $new_password)){
+
+			if($this->db->update('login_tbl', $new_password)){
+				
+				return 1;
+
+			}else{
+
+				return 0;
+
+			}
+
+		}else{
+
+			return 0;
+
+		}
+
 	}
 
 }

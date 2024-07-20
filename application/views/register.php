@@ -28,7 +28,7 @@
                                 <input type="password" id="password-2" class="text-field pass" placeholder="Confirm password" />
                             </div>
                             <div class="login-element-container">
-                                <a id="next-btn" class="login-btn next-btn" href="">Next</a><i class="fa fa-chevron-right"></i>
+                                <div id="next-btn" class="login-btn next-btn">Next<i class="fa fa-chevron-right"></i></div>
                             </div>
                         </fieldset>
                         <fieldset class="reg-2 fieldsets hidden">

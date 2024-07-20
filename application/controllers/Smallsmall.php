@@ -240,18 +240,29 @@ class Smallsmall extends CI_Controller {
 
 		$username = $this->input->post("username");
 
-		$password = md5($this->input->post("password"));
+		$raw_password = $this->input->post("password");
 
-		$user = $this->smallsmall_model->login_user($username, $password);
+		$check_email = $this->smallsmall_model->check_email($username);
 
-		if($user){
+		if(!$check_email){
 
-			$userdata = array('userID' => $user['userID'], 'loggedIn' => 'yes', 'fname' => $user['firstName'], 'lname' => $user['lastName'], 'email' => $user['email'], 'verified' => $user['verified'], 'phone' => $user['phone'], 'user_type' => $user['user_type'], 'referral_code' => $user['referral_code'], 'rss_points' => $user['points']);
-			//Set session
-			
-			$this->session->set_userdata($userdata);
-			
-			echo 1;
+			$result = $this->login_user($username, $raw_password, $check_email['password'], $check_email['userID']);
+
+			if ($result) {
+
+				$user = $this->smallsmall_model->get_user_details($check_email['userID']);
+
+				$userdata = array('userID' => $user['userID'], 'loggedIn' => 'yes', 'fname' => $user['firstName'], 'lname' => $user['lastName'], 'email' => $user['email'], 'verified' => $user['verified'], 'phone' => $user['phone'], 'user_type' => $user['user_type'], 'referral_code' => $user['referral_code'], 'rss_points' => $user['points']);
+				//Set session
+				
+				$this->session->set_userdata($userdata);
+				
+				echo 1;
+
+			} else {
+
+				echo 0;
+			}
 
 		}else{
 
@@ -429,5 +440,37 @@ class Smallsmall extends CI_Controller {
 		  );
 		 
 	} 
+
+	public function login_user($username, $password, $dbpassword, $userID)
+	{
+
+		$login_limit = 5;
+
+		$user = 0;
+
+		$md5_password = md5($password);
+
+		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+		if ($md5_password == $dbpassword) {
+
+			$this->smallsmall_model->update_password_to_hash($userID, $hashed_password);
+
+			$user = 1;
+		} else if (password_verify($password, $dbpassword)) {
+
+			$user = 1;
+		} else {
+
+			if (!$this->session->has_userdata('attempt')) {
+
+				$this->session->set_userdata(array('attempt' => 1));
+			} else {
+
+				$new_val = $this->session->userdata('attempt') + 1;
+
+				$this->session->set_userdata('attempt', $new_val);
+			}
+		}
 
 }
