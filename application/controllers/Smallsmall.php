@@ -457,6 +457,7 @@ class Smallsmall extends CI_Controller {
 			$this->smallsmall_model->update_password_to_hash($userID, $hashed_password);
 
 			$user = 1;
+
 		} else if (password_verify($password, $dbpassword)) {
 
 			$user = 1;
@@ -472,6 +473,8 @@ class Smallsmall extends CI_Controller {
 				$this->session->set_userdata('attempt', $new_val);
 			}
 		}
+
+		return $user;
 	}
 
 }
