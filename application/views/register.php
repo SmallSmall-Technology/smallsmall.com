@@ -28,7 +28,7 @@
                                 <input type="password" id="password-2" class="text-field pass" placeholder="Confirm password" />
                             </div>
                             <div class="login-element-container">
-                                <button id="next-btn" class="login-btn next-btn"><a href="">Next</a><i class="fa fa-chevron-right"></i></button>
+                                <a id="next-btn" class="login-btn next-btn" href="">Next</a><i class="fa fa-chevron-right"></i>
                             </div>
                         </fieldset>
                         <fieldset class="reg-2 fieldsets hidden">
@@ -69,7 +69,7 @@
                     <li></li>
                 </ul>
                 <div class="forgot-password-box">
-                By signing up for an account you agree to our <a href="">Privacy Policy</a> and <a href="">Terms of use</a>.
+                By signing up for an account you agree to our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a> and <a href="<?php echo base_url('terms-and-conditions'); ?>">Terms of use</a>.
                 </div>
             </div>
         </section> 
