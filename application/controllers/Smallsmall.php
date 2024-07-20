@@ -244,7 +244,7 @@ class Smallsmall extends CI_Controller {
 
 		$check_email = $this->smallsmall_model->check_email($username);
 
-		if(!$check_email){
+		if(!empty($check_email)){
 
 			$result = $this->login_user($username, $raw_password, $check_email['password'], $check_email['userID']);
 
@@ -307,9 +307,9 @@ class Smallsmall extends CI_Controller {
 
 		//Check to see if email exists already
 
-		$email_res = $this->smallsmall_model->check_email($email);
+		$check_email = $this->smallsmall_model->check_email($email);
 
-		if($email_res){
+		if(!empty($check_email)){
 
 			echo "Email already exists in our database!";
 			
