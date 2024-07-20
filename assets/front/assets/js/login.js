@@ -100,7 +100,7 @@ $('#ssLoginForm').submit(function(e){
 
                 $('.report-box').addClass('error');
 
-                $('.report-box').html("Username/Password incorrect");
+                $('.report-box').html("Error: "+data);
 
 				$('#login-but').val('Login');
                 

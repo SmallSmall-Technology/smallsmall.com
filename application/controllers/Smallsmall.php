@@ -261,12 +261,12 @@ class Smallsmall extends CI_Controller {
 
 			} else {
 
-				echo 0;
+				echo 'User details does not exist';
 			}
 
 		}else{
 
-			echo 0;
+			echo 'Email does not exist';
 
 		}
 	}
