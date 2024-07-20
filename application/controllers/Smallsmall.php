@@ -472,5 +472,6 @@ class Smallsmall extends CI_Controller {
 				$this->session->set_userdata('attempt', $new_val);
 			}
 		}
+	}
 
 }
