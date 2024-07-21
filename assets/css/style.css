@@ -776,6 +776,33 @@ a.buyer-btn i{
     height: 250px;
     overflow: hidden;
     margin-bottom: 10px;
+    position: relative;
+}
+.media-icon{
+    width: 40px;
+    height: 40px;
+	background-position:center;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(99, 173, 126, 0.7);
+    border-radius: 50%;
+}
+.media-icon.podcast{
+    background-image:url(../img/podcast.svg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.media-icon.blog{
+    background-image:url(../img/blog.svg);
+	background-repeat:no-repeat;
+	background-position:center;
 }
 .blog-image img{
     width: 100%;
