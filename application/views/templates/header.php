@@ -82,17 +82,17 @@
                                     </span>
                                 </li>
                             </ul>
-                        </li>
+                        </li> 
                         <li id="menu-item-media" class="menu-item menu-item-parent"><a>Media <i class="fa fa-chevron-down"></i></a>
                             <ul id="media-menu" class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="#">Podcast</a>
+                                    <a href="https://media.smallsmall.com/category/podcasts/">Podcast</a>
                                     <span class="menu-description">
                                         Join our engagin podcast 
                                     </span>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="<?php echo base_url('blog'); ?>">Blog</a>
+                                    <a href="https://media.smallsmall.com/category/blogs/">Blog</a>
                                     <span class="menu-description">
                                         Explore our curated articles 
                                     </span>

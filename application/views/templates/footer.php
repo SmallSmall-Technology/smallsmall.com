@@ -16,15 +16,15 @@
                     </div>
                     <div class="links-container">
                         <div class="footer-links-head">Resources</div>
-                        <div class="footer-links"><a href="#">Podcast</a></div>
-                        <div class="footer-links"><a href="<?php echo base_url('blog'); ?>">Blog</a></div>
+                        <div class="footer-links"><a target="_blank" href="https://media.smallsmall.com/category/podcasts/">Podcast</a></div>
+                        <div class="footer-links"><a target="_blank" href="https://media.smallsmall.com/category/blogs/">Blog</a></div>
                         <div class="footer-links"><a href="#">Newsletter</a></div>
                         <div class="footer-links"><a>&nbsp;</a></div>
                     </div>
                     <div class="links-container">
                         <div class="footer-links-head">Company</div>
                         <div class="footer-links"><a href="<?php echo base_url('about'); ?>">Our Story</a></div>
-                        <div class="footer-links"><a href="<?php echo base_url('blog'); ?>">Blog</a></div>
+                        <div class="footer-links"><a target="_blank" href="https://media.smallsmall.com/category/blogs/">Blog</a></div>
                         <div class="footer-links"><a target="_blank" href="https://jobs.cvviz.com/smallsmall_">Careers</a></div>
                     </div>
                     <div class="links-container">                        

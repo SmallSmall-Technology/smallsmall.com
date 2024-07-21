@@ -873,7 +873,6 @@ footer{
 }
 .links-container{
     width: 23%;
-    margin: auto;
     display: flex;
     flex-direction: column;
 }
