@@ -107,14 +107,28 @@
 
                         </li>
                     </ul>
-                    <div class="header-buttons mobile">
+                    <?php if($loggedIn){ ?>
+                        <div class="header-buttons mobile">
+                            <div class="header-btn login"><a href="<?php echo base_url('login'); ?>">Login</a></div>
+                            <div class="header-btn get-started"><a href="<?php echo base_url('register'); ?>">Get started</a></div>
+                        </div>
+                    <?php }else{ ?>
+                        <div class="header-buttons mobile">
+                            <div class="header-btn login"><a href="<?php echo base_url('logout'); ?>">Logout</a></div>
+                            <div class="header-btn get-started"><a href="https://rent.smallsmall.com/dashboard">Dashboard</a></div>
+                        </div>
+                    <?php } ?>
+                </div>
+                <?php if($loggedIn){ ?>
+                    <div class="header-buttons desktop">
                         <div class="header-btn login"><a href="<?php echo base_url('login'); ?>">Login</a></div>
                         <div class="header-btn get-started"><a href="<?php echo base_url('register'); ?>">Get started</a></div>
                     </div>
-                </div>
-                <div class="header-buttons desktop">
-                    <div class="header-btn login"><a href="<?php echo base_url('login'); ?>">Login</a></div>
-                    <div class="header-btn get-started"><a href="<?php echo base_url('register'); ?>">Get started</a></div>
-                </div>
+                <?php }else{ ?>
+                    <div class="header-buttons desktop">
+                        <div class="header-btn login"><a href="<?php echo base_url('logout'); ?>">Logout</a></div>
+                        <div class="header-btn get-started"><a href="htts://rent.smallsmall.com/dashboard">Dashboard</a></div>
+                    </div>
+                <?php } ?>
             </div>
         </header>

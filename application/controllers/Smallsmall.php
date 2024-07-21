@@ -477,4 +477,15 @@ class Smallsmall extends CI_Controller {
 		return $user;
 	}
 
+	public function logout()
+	{
+
+		$this->session->unset_userdata('userdata');
+
+		$this->session->sess_destroy();
+
+		redirect(base_url(), 'refresh');
+
+	}
+
 }

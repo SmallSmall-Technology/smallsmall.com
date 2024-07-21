@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['register'] = 'smallsmall/register_page';
 $route['login'] = 'smallsmall/login_page';
+$route['logout'] = 'smallsmall/logout';
 $route['terms-and-conditions'] = 'smallsmall/terms_and_conditions';
 //$route['faq'] = 'smallsmall/faq';
 $route['privacy-policy'] = 'smallsmall/privacy_policy';
