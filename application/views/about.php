@@ -25,17 +25,17 @@
                 <div class="about-impact">
                       <div class="impact-item">
                         <div class="impact-img"><img src="<?php echo base_url(); ?>assets/img/loan.svg" alt="Loan icon" /></div>
-                        <div class="impact-numbers">N300m</div>
+                        <div class="impact-numbers">N800m</div>
                         <div class="impact-note">Saved on legal & agency fee</div>
                       </div>
                       <div class="impact-item">
                         <div class="impact-img"><img src="<?php echo base_url(); ?>assets/img/house-chimney.svg" alt="Chimney icon" /></div>
-                        <div class="impact-numbers">200k</div>
+                        <div class="impact-numbers">300k</div>
                         <div class="impact-note">Monthly stays</div>
                       </div>
                       <div class="impact-item">
                         <div class="impact-img"><img src="<?php echo base_url(); ?>assets/img/money-bill-wave.svg" alt="Money bill icon" /></div>
-                        <div class="impact-numbers">N2bn</div>
+                        <div class="impact-numbers">N10bn</div>
                         <div class="impact-note">Worth of property sold</div>
                       </div>
                 </div>
