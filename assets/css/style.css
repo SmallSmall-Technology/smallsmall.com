@@ -719,6 +719,32 @@ a.buyer-btn i{
     background: #AC6ADD;
     text-align: center;
 }
+.buyers-btn{
+    display: inline-block;
+    padding: 15px 30px; 
+    background: #FFF;
+    border-radius: 16px;
+    margin-top:40px;
+}
+.buyers-btn a{
+    text-decoration: none;
+    display: block;
+    color: #AC6ADD;
+    font-family: 'Hellix Regular';
+}
+.buyers-btn a i{
+    transition: .4s;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #FFF;
+    background: #AC6ADD;
+    text-align: center;
+}
+.buyers-btn:hover a i{
+    transition: .4s;
+    rotate: 360deg;
+}
 .section-inner .middle-class-text{
     flex-grow: 1;
     background: #662D91;
@@ -1361,6 +1387,16 @@ fieldset.hidden{
         margin-top:20px;
     }
     .employees-btn a i{
+        transition: .4s;
+        width: 20px;
+        line-height: 20px;
+    }
+    .buyers-btn{
+        padding: 10px 25px; 
+        border-radius: 10px;
+        margin-top:20px;
+    }
+    .buyers-btn a i{
         transition: .4s;
         width: 20px;
         line-height: 20px;
