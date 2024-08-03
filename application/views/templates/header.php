@@ -9,6 +9,16 @@
     
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     
+    <!-- Poper Code Start - poper.ai -->
+    <script id="poper-js-script" data-account-id="63435aa036f45572cbae1637da0aeb42" src="https://app.poper.ai/share/poper.js" defer></script>
+    <script>
+        window.Poper = window.Poper || [];
+        window.Poper.push({
+            accountID: "63435aa036f45572cbae1637da0aeb42",
+        });
+    </script>
+    <!-- Poper Code End -->
+
     <link rel="canonical" href="<?php echo base_url(); ?>" />
     
     <meta property="og:locale" content="en_US" />
@@ -48,7 +58,7 @@
                         <li id="menu-item-products" class="menu-item menu-item-parent"><a>Products <i class="fa fa-chevron-down"></i></a>
                             <ul id="products-menu" class="sub-menu">
                                 <li target="_blank" class="menu-item menu-item-parent">
-                                    <a href="https://rent.smllsmll.com">RentSmallSmall</a>
+                                    <a href="https://rent.smallsmall.com">RentSmallSmall</a>
                                     <span class="menu-description">
                                         Enjoy flexible monthly rental payments within your means.
                                     </span>
@@ -98,7 +108,7 @@
                                     </span>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Newsletter</a>
+                                    <a href="https://media.smallsmall.com/category/news/">Newsletter</a>
                                     <span class="menu-description">
                                         Stay updated with deals on all of our platforms 
                                     </span>
