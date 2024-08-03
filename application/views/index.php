@@ -149,31 +149,31 @@
                             <div class="benefit-txt">
                                 Enjoy low upfront costs and pay over time at your convenience. 
                             </div> 
-                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
+                            <a class="buyer-btn" target="_blank" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
                         </div>
                         <div class="buyer-benefit">
                             <div class="benefit-head">Buy2Co-Own</div>
                             <div class="benefit-txt">
                                 Take your first step to homeownership with just N4,000. 
                             </div>  
-                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                            
+                            <a class="buyer-btn" target="_blank" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                            
                         </div>
                         <div class="buyer-benefit">
                             <div class="benefit-head">Own Now, Pay Later</div>
                             <div class="benefit-txt">
                                 Enjoy a flexible pathway to own your dream home today and pay on your terms.
                             </div> 
-                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
+                            <a class="buyer-btn" target="_blank" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a> 
                         </div>
                         <div class="buyer-benefit">
                             <div class="benefit-head">Buy2Let</div>
                             <div class="benefit-txt">
                             Unlock your path to financial security and build a robust real estate portfolio with ease.
                             </div> 
-                            <a class="buyer-btn" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                           
+                            <a class="buyer-btn" target="_blank" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a>                           
                         </div>
                     </div>
-                    <div class="middle-class-btn"><a href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                    <div class="buyers-btn"><a target="_blank" href="https://buy.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a></div>
                 </div>
             </div>
         </section>
@@ -200,7 +200,7 @@
                             </div>                            
                         </div>
                     </div>
-                    <div class="employees-btn"><a href="#">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                    <div class="employees-btn"><a target="_blank" href="https://househmo.smallsmall.com/">Explore more <i class="fa fa-arrow-right"></i></a></div>
                 </div>
                 <div class="employees-image employees">
                     <!---<img src="assets/images/office-guys-working.svg" alt="Woman sitting on sofa" />--->
