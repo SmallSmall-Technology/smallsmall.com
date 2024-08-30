@@ -200,7 +200,10 @@
                             </div>                            
                         </div>
                     </div>
-                    <div class="employees-btn"><a target="_blank" href="https://househmo.smallsmall.com/">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                    <div class="employees-btn">
+                        <!---<a target="_blank" href="https://househmo.smallsmall.com/">Explore more <i class="fa fa-arrow-right"></i></a>--->
+                        <a>Coming Soon!</a>
+                    </div>
                 </div>
                 <div class="employees-image employees">
                     <!---<img src="assets/images/office-guys-working.svg" alt="Woman sitting on sofa" />--->
