@@ -24,6 +24,7 @@ if(!$_SESSION['user_is_logged_in'])
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
 
 </head>
 

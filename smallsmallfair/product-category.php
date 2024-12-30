@@ -41,13 +41,13 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Product list</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Product Category</h6>
                         </div>
                         <div class="card-body">
                         <?php
                             //$query = [ Query::limit(10) ];
                                
-                            $products = $databases->listDocuments('665b5930002cd0d6258b', '665f4dca0032a163db47');
+                            $categories = $databases->listDocuments('665b5930002cd0d6258b', '665f6f6c0021054ef9d6');
 
                             
 
@@ -58,33 +58,36 @@
                                     <thead>
                                         <tr>
                                             <th>&nbsp;</th>
-                                            <th>Product Name</th>
+                                            <th>Category</th>
+                                            <th>Items</th>
+                                            <th>Sales</th>
                                             <th>Vendor</th>
-                                            <th>Price</th>
-                                            <th>Stock</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>&nbsp;</th>
-                                            <th>Product Name</th>
+                                            <th>Category</th>
+                                            <th>Items</th>
+                                            <th>Sales</th>
                                             <th>Vendor</th>
-                                            <th>Price</th>
-                                            <th>Stock</th>
+                                            <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php foreach($products as $product => $value){ ?>
+                                        <?php foreach($categories as $category => $value){ ?>
                                             <?php for($i = 0; $i < count($value); $i++){ ?>
                                             <tr>
-                                                <td><div class="cover-image"><img src="<?php echo $value[$i]['coverImage'] ?>" width="100%" /></div></td>
-                                                <td><?php echo $value[$i]['productName'] ?></td>
+                                                <td><div class="cover-image"><img src="<?php echo $value[$i]['categoryImage'] ?>" width="100%" /></div></td>
+                                                <td><?php echo $value[$i]['name'] ?></td>
                                                 <td>
-                                                    <?php echo $value[$i]['vendor']['brandName'] ?>
-                                                    <span class="sub-line-text">Vendor: <?php echo $value[$i]['vendor']['firstName'].' '.$value[$i]['vendor']['lastName'] ?></span>
+                                                    <?php echo count($value[$i]['productTable']) ?>
+                                                    
                                                 </td>
-                                                <td><?php echo '₦'.number_format($value[$i]['productPrice']) ?></td>
-                                                <td><?php echo ($value[$i]['inStock'])? '<span class="text-success">In Stock</span>' : '<span class="text-danger">Out Of Stock</span>' ?></td>
+                                                <td><?php echo '₦1,000,000' ?></td>
+                                                <td><?php echo count($value[$i]['productTable']['vendor']) ?></td>
+                                                <td><a href="#">View</a></td>
                                             </tr>
                                             <?php } ?>
                                        <?php } ?> 

@@ -1492,12 +1492,12 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #e3e6f0;
+  /*border-top: 1px solid #e3e6f0;*/
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #e3e6f0;
+  /*border-bottom: 2px solid #e3e6f0;*/
 }
 
 .table tbody + tbody {
@@ -9910,10 +9910,13 @@ a:focus {
   -webkit-animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
-
+.dash-btn{
+  border-radius:20px;
+  background: #FCC417;
+}
 .bg-gradient-primary {
-  background-color: rgb(99, 173, 126);
-  background-image: linear-gradient(180deg, #63ad7e 10%, #4f8f66 100%);
+  background-color: #FFF;
+  /*background-image: linear-gradient(180deg, #63ad7e 10%, #4f8f66 100%);*/
   background-size: cover;
 }
 
@@ -10702,35 +10705,41 @@ a:focus {
 }
 
 .sidebar-dark .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: #737791;
 }
 
 .sidebar-dark .nav-item .nav-link i {
-  color: rgba(255, 255, 255, 0.3);
+  color: #737791;
 }
 
 .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
-  color: #fff;
+  color: #0095FF;
 }
 
 .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
-  color: #fff;
+  color: #0095FF;
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
-  color: rgba(255, 255, 255, 0.5);
+  color: #737791;
 }
 
 .sidebar-dark .nav-item.active .nav-link {
-  color: #fff;
+  color: #0095FF;
+}
+.sidebar-dark .dash-btn.active .nav-link{
+  color: #FFF !important;
+}
+.sidebar-dark .nav-item.active .nav-link i {
+  color: #0095FF;
+}
+.sidebar-dark .dash-btn.active .nav-link i{
+  color: #FFF !important;
 }
 
-.sidebar-dark .nav-item.active .nav-link i {
-  color: #fff;
-}
 
 .sidebar-dark #sidebarToggle {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #FCC417;
 }
 
 .sidebar-dark #sidebarToggle::after {
