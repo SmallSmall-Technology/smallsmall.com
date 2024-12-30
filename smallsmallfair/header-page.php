@@ -23,7 +23,7 @@ if(!$_SESSION['user_is_logged_in'])
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css?ver=<?php echo rand(99, 99999999); ?>" rel="stylesheet">
     <link href="css/timeline.css" rel="stylesheet">
 
 </head>
