@@ -8,6 +8,8 @@
                 <?php include('topbar.php'); ?>
 
                 <?php
+
+                    $categoryID = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['category']);
                 
                     require 'vendor/autoload.php';
                     use Appwrite\Client;
@@ -23,8 +25,9 @@
                     ;
                     
                     $databases = new Databases($client);
-                    
-                    //$result = $databases->create('665b5930002cd0d6258b', 'smallsmallfair');
+
+                    $products = $databases->getDocument('665b5930002cd0d6258b', '665f6f6c0021054ef9d6', $categoryID);
+
                 ?>
 
                 
@@ -34,27 +37,46 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Products</h1>
-                    <!---<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>--->
+
+                    <!--- Other categories ---->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary"><?php echo $products['name'] ?></h6>
+                        </div>
+                        <div class="card-body">
+                            <ul class="other-cat-container">
+                                <?php $categories = get_all_categories($databases); ?>
+                                <?php foreach($categories as $category => $cat_value){ ?>
+                                    <?php for($i = 0; $i < count($cat_value); $i++){ ?>
+                                        <?php if($cat_value[$i]['name'] != ''){ ?>
+                                        <li class="other-cat-item">
+                                            <a class="cat-link" href="">
+                                                <span class="cat-img" style="background-image: url(<?php echo $cat_value[$i]['categoryImage'] ?>)"></span>
+                                                <span class="cat-text"><?php echo $cat_value[$i]['name'] ?></span>
+                                            </a>
+                                        </li>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!--- Other categories ---->
+                    
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Product list</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Product Category</h6>
                         </div>
                         <div class="card-body">
                         <?php
-                            //$query = [ Query::limit(10) ];
-                               
-                            $products = $databases->listDocuments('665b5930002cd0d6258b', '665f4dca0032a163db47');
-
                             
-
-                            //exit;
                         ?>
                             <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" cellspacing="0">
+                            <table class="table" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>&nbsp;</th>
@@ -62,7 +84,6 @@
                                             <th>Vendor</th>
                                             <th>Price</th>
                                             <th>Stock</th>
-                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -72,7 +93,6 @@
                                             <th>Vendor</th>
                                             <th>Price</th>
                                             <th>Stock</th>
-                                            <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -87,7 +107,6 @@
                                                 </td>
                                                 <td><?php echo '₦'.number_format($value[$i]['productPrice']) ?></td>
                                                 <td><?php echo ($value[$i]['inStock'])? '<span class="text-success">In Stock</span>' : '<span class="text-danger">Out Of Stock</span>' ?></td>
-                                                <td><a href="single-product?product=<?php echo $value[$i]['$id'] ?>" >View</a></td>
                                             </tr>
                                             <?php } ?>
                                        <?php } ?> 

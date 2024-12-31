@@ -87,7 +87,7 @@
                                                 </td>
                                                 <td><?php echo '₦1,000,000' ?></td>
                                                 <td><?php echo count($value[$i]['productTable']['vendor']) ?></td>
-                                                <td><a href="#">View</a></td>
+                                                <td><a href="category?category=<?php echo $value[$i]['$id'] ?>">View</a></td>
                                             </tr>
                                             <?php } ?>
                                        <?php } ?> 

@@ -2,6 +2,8 @@
 session_start();
 if(!$_SESSION['user_is_logged_in'])
     header('location:index');
+
+include_once('functions/funcs.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +13,7 @@ if(!$_SESSION['user_is_logged_in'])
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex,nofollow" />
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -24,6 +27,7 @@ if(!$_SESSION['user_is_logged_in'])
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css?ver=<?php echo rand(99, 99999999); ?>" rel="stylesheet">
+    <link href="css/custom-css.css?ver=<?php echo rand(99, 99999999); ?>" rel="stylesheet">
     <link href="css/timeline.css" rel="stylesheet">
 
 </head>

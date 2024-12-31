@@ -9772,6 +9772,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table th {
     background-color: #fff !important;
   }
+  .table th{
+    color: #0095FF;
+  }
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dddfeb !important;
