@@ -214,7 +214,7 @@
             </div>
         </section>
 
-        <!---<section>
+        <section>
             <div class="section-inner renters">                
                 <div class="renters-image">
                     <img src="assets/images/joyful-african-american-couple-with-colorful-shopping-bags.svg" alt="Joyful African Couple" />
@@ -228,7 +228,7 @@
                         <div class="benefit">
                             <div class="benefit-head">Invest Your Company A-Players</div>
                             <div class="benefit-txt">
-                                Don't lose your elite talent to deep-pocketed competitors – invest in their future with HouseHMO's unbeatable housing benefits. 
+                                Don't lose your elite talent to deep-pocketed competitors - invest in their future with HouseHMO's unbeatable housing benefits. 
                             </div>
                         </div>
                         <div class="benefit">
@@ -238,10 +238,10 @@
                             </div>                            
                         </div>
                     </div>
-                    <div class="middle-class-btn"><a href="">Explore more <i class="fa fa-arrow-right"></i></a></div>
+                    <div class="middle-class-btn"><a href="https://fair.smallsmall.com">Explore more <i class="fa fa-arrow-right"></i></a></div>
                 </div>
             </div>
-        </section>--->
+        </section>
 <script src="<?php echo base_url('assets/front/assets/js/share-button-action.js'); ?>"></script>
 <script>
     function fbShare(url, title, descr, image, winWidth, winHeight) {

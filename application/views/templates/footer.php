@@ -12,7 +12,7 @@
                         <div class="footer-links"><a href="https://rent.smallsmall.com">RentSmallSmall</a></div>
                         <div class="footer-links"><a href="https://buy.rentsmallsmll.com">BuySmallSmall</a></div>
                         <div class="footer-links"><a target="_blank" href="https://househmo.smallsmall.com/">HouseHMO</a></div>
-                        <div class="footer-links"><a href="#">Fair by SmallSmall</a></div>
+                        <div class="footer-links"><a target="_blank" href="https://fair.smallsmall.com">Fair by SmallSmall</a></div>
                     </div>
                     <div class="links-container">
                         <div class="footer-links-head">Resources</div>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="footer-logo"><img src="assets/img/smallsmall-logo.svg" alt="SmallSmall Logo" /></div>
                 <div class="copyright-container">
-                    <span>&copy; Copyright 2024 Smallsmall Technology Ltd</span>
+                    <span>&copy; Copyright <?php echo date('Y'); ?> Smallsmall Technology Ltd</span>
                     <span><a href="<?php echo base_url('terms-and-conditions'); ?>">Terms and Conditions</a></span>
                     <span><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></span>
                 </div>
